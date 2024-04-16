@@ -1,6 +1,24 @@
 import './App.css'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    const formElement: HTMLFormElement | null = document.querySelector("#infoForm");  
+
+    formElement?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+    
+      const data: FormData | null = new FormData(formElement);
+      const urlEncoded = new URLSearchParams();
+      
+      urlEncoded.append("test1", data.get("test1")!.toString());
+      urlEncoded.append("test2", data.get("test2")!.toString());
+      urlEncoded.append("test3", data.get("test3")!.toString());
+      
+      const res = await fetch("http://localhost:8080/test/post", {method: "POST", body: urlEncoded});
+      console.log(res);
+    })
+  }, [])
 
   return (
     <>

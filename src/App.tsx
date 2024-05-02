@@ -11,24 +11,25 @@ function App() {
       const data: FormData | null = new FormData(formElement);
       const urlEncoded = new URLSearchParams();
       
-      urlEncoded.append("test1", data.get("test1")!.toString());
-      urlEncoded.append("test2", data.get("test2")!.toString());
-      urlEncoded.append("test3", data.get("test3")!.toString());
+      urlEncoded.append("lastName", data.get("lastName")!.toString());
+      urlEncoded.append("firstName", data.get("firstName")!.toString());
+      urlEncoded.append("description", data.get("description")!.toString());
       
-      const res = await fetch("http://localhost:8080/test/post", {method: "POST", body: urlEncoded});
+      const res = await fetch("https://ts-be.onrender.com/test/post", {method: "POST", body: urlEncoded});
       console.log(res);
     })
   }, [])
 
   return (
     <>
+    <div id='formHeader'><h1>KWTicketSystem</h1></div>
     <form id="infoForm">
-      <label htmlFor={"test1"}>Test1:</label>
-      <input type={"text"} name={"test1"} id={'test1'}></input>
-      <label htmlFor={"test2"}>Test2:</label>
-      <input type={"text"} name={"test2"} id={'test2'}></input>
-      <label htmlFor={"test3"}>Test3:</label>
-      <input type={"text"} name={"test3"} id={'test3'}></input>
+      <label htmlFor={"lastName"}>Last Name</label>
+      <input type={"text"} name={"lastName"} id={'lastName'}></input>
+      <label htmlFor={"firstName"}>First Name</label>
+      <input type={"text"} name={"firstName"} id={'firstName'}></input>
+      <label htmlFor={"description"}>Situation Description</label>
+      <textarea id='description' name='description'></textarea>
       <input type={"submit"} name={"submitButton"} id={"submitButton"}></input>
     </form>
     </>

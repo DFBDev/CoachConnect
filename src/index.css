@@ -2,5 +2,6 @@ body {
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color: black;
+  background-color: rgb(224, 224, 224);
+  height:98vh;
 }

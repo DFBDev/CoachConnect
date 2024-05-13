@@ -15,7 +15,9 @@ function App() {
       urlEncoded.append("firstName", data.get("firstName")!.toString());
       urlEncoded.append("description", data.get("description")!.toString());
       
-      const res = await fetch("https://ts-be.onrender.com/test/post", {method: "POST", body: urlEncoded});
+      const res = await fetch("https://ts-be.onrender.com/actions/T2zOwRu-iji-RinOje*h", {method: "POST", body: urlEncoded});
+      formElement.reset();
+      
       console.log(res);
     })
   }, [])

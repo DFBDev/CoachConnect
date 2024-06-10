@@ -1,30 +1,11 @@
-# React + TypeScript + Vite
+# CoachConnect.
+1 of 3 view components for the CoachConnect platform; a tool designed to help coaches at KW hold their agents accountable and keep track of their progress.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Key Purpose.
+Provides an interface for agents to submit statistics regarding their daily progress. 
 
-Currently, two official plugins are available:
+## Release Log.
+* `v1.0.1`: COMING SOON.
+* `v1.0.0`: Includes all fundamental components for data submission, following the conventional form/fetch structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Made w/ Vite build tool, implementing React and TypeScript.

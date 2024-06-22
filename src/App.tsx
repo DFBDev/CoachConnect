@@ -43,9 +43,9 @@ function App() {
       <input type={"text"} name={"lastName"} id={'lastName'} required></input>
       <label htmlFor={"firstName"}>First Name</label>
       <input type={"text"} name={"firstName"} id={'firstName'} required></input>
-      <label htmlFor={"dialcount"}>Dial Count</label>
+      <label htmlFor={"dialcount"}># of Dials</label>
       <input type={"number"} name={"dialcount"} id={'dialcount'} required></input>
-      <label htmlFor={"conversationcount"}>Conversation Count</label>
+      <label htmlFor={"conversationcount"}># of Conversations</label>
       <input type={"number"} name={"conversationcount"} id={'conversationcount'} required></input>
       <label htmlFor={"appointmentsset"}>Appointments Set</label>
       <input type={"number"} name={"appointmentsset"} id={'appointmentsset'} required></input>
